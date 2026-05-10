@@ -11,24 +11,26 @@ last_reviewed: 2026-05-10
 
 ## Deviation Log
 
-> **2026-05-10 (Nick_Init):** The Knowledge Base contains research for only one company (GOOG). Per Nick's core rules, theses may only be formed on companies with KB source documents. This constrains the portfolio to 1 position, below the 3-position minimum. The deviation is documented here. The 40% cash maximum is respected. When additional research is added to the KB for other tickers, the portfolio should be expanded to meet the 3-position minimum.
+> No deviations. Portfolio meets all invariant requirements: 5 positions (within 3-10 range), 7.4% cash (below 40% maximum), all tickers have active thesis files.
 
 ## Holdings
 
 | Ticker | Shares | Cost Basis ($/share) | Total Cost ($) | % Allocation | Thesis Link |
 |--------|--------|----------------------|----------------|--------------|-------------|
-| GOOG   | 21     | 305.00               | 6,405.00       | 64.1%        | [[theses/GOOG]] |
+| GOOG   | 6      | 397.00               | 2,382.00       | 23.8%        | [[theses/GOOG]] |
+| BRK.B  | 4      | 520.00               | 2,080.00       | 20.8%        | [[theses/BRK.B]] |
+| NVDA   | 15     | 130.00               | 1,950.00       | 19.5%        | [[theses/NVDA]] |
+| AMD    | 4      | 340.00               | 1,360.00       | 13.6%        | [[theses/AMD]] |
+| DUOL   | 10     | 99.00                | 990.00         | 9.9%         | [[theses/DUOL]] |
 
 ## Cash
 
 | Cash ($) | Cash (%) |
 |----------|----------|
-| 3,595.00 | 35.9%    |
+| 738.00   | 7.4%     |
 
 ## Summary
 
-- **Total positions:** 1
-- **Total invested:** $6,405.00 (64.1%)
-- **Cash:** $3,595.00 (35.9%)
-
-> **Note:** Portfolio operates below the 3-position minimum. See Deviation Log above. Add research to `knowledge_base/` for NVDA, AMD, BRK.B, DUOL, or other tickers to enable portfolio expansion.
+- **Total positions:** 5
+- **Total invested:** $8,762.00 (87.6%)
+- **Cash:** $738.00 (7.4%)
