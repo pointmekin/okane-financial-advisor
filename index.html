@@ -24,7 +24,8 @@
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
   --max-width: 860px;
-  --section-gap: 7rem;
+  --section-gap: 10rem;
+  --section-divider: 1px solid var(--border);
 }
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
@@ -108,10 +109,16 @@ nav .nav-links a:hover, nav .nav-links a:focus-visible {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 4rem 2rem;
 }
 
-section { margin-bottom: var(--section-gap); }
+section {
+  margin-bottom: var(--section-gap);
+  padding-top: var(--section-gap);
+  border-top: var(--section-divider);
+}
+
+.hero { border-top: none; }
 
 /* ─── Reveal animation ─── */
 .reveal {
@@ -552,6 +559,7 @@ section { margin-bottom: var(--section-gap); }
   line-height: 1.9;
   color: var(--text-muted);
   overflow-x: auto;
+  white-space: pre;
 }
 
 .arch-tree .dir { color: var(--text); }
