@@ -29,7 +29,7 @@ status: active | broken | exited
 conviction: high | medium
 ---
 
-# <TICKER> — Investment Thesis
+# <TICKER> -- Investment Thesis
 
 ## Original Thesis
 <2-4 sentences. State the core business quality argument: what makes this business exceptional, what durable advantage it holds, why it compounds value over time. Focus on the business, not the price.>
@@ -45,7 +45,7 @@ conviction: high | medium
 ## Kill Conditions
 > Kill Conditions are specific, fundamental, and measurable. They are NOT price targets or drawdown thresholds. Triggering one requires immediate review and likely exit.
 
-1. **[KC-1]** <Specific condition that, if true, proves the original thesis wrong. Example: "Gross margin falls below 55% for two consecutive quarters, indicating structural pricing pressure.">"
+1. **[KC-1]** <Specific condition that, if true, proves the original thesis wrong. Example: "Gross margin falls below 55% for two consecutive quarters, indicating structural pricing pressure.">
 2. **[KC-2]** <Second condition — optional but recommended. Example: "Management diverts >20% of FCF to unrelated acquisitions outside the core business.">
 3. **[KC-3]** <Third condition — optional. Only include if genuinely distinct from KC-1 and KC-2.>
 
@@ -61,6 +61,12 @@ conviction: high | medium
 <!-- Nick appends dated notes here after each Quarterly review. Never edits prior entries. -->
 ```
 
+## Conviction Level Criteria
+
+- **High**: Multiple primary sources (10-K + 10-Q or transcript) plus corroborating analysis; business model well-understood; clear competitive moat with quantifiable metrics; few or no conflicting signals
+- **Medium**: At least one primary source plus one corroborating source; thesis is supportable but has identifiable gaps (e.g., limited historical data, execution risk on stated strategy, or meaningful conflicting analyst signals)
+- Never assign conviction below Medium — if evidence is thinner than this, do not write a thesis
+
 ## Validation Rules
 
 Before writing the file, verify:
@@ -68,6 +74,7 @@ Before writing the file, verify:
 - [ ] At least 1 Kill Condition is present and measurable (not "if the stock drops 30%")
 - [ ] All sources listed are real files in `knowledge_base/`
 - [ ] No hallucinated financials — every number cites a source
+- [ ] Conviction level is justified per the criteria above
 
 If any check fails, do not write the file. State which check failed and what data is missing.
 

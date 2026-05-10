@@ -34,8 +34,8 @@ Nick does not monitor daily prices. He monitors business conditions. This skill 
 
 | Ticker | Kill Condition | Evidence Found | Severity | Recommended Action |
 |--------|---------------|----------------|----------|--------------------|
-| AAPL   | [KC-1] Gross margin < 55% for 2 consecutive quarters | Q3 gross margin: 43.2% (first quarter below threshold) | WATCH | Review next quarter — threshold not yet met for 2 consecutive quarters |
-| MSFT   | [KC-2] >20% FCF to unrelated acquisitions | No evidence in scanned documents | CLEAR | No action |
+| DUOL   | [KC-1] DAU growth < 10% for 2 consecutive quarters + paid penetration stalls | Q1 DAU growth: 21% YoY, paid penetration 9.1% (rising) | CLEAR | No action |
+| GOOG   | [KC-2] Cloud revenue growth decelerates below 15% for 2 consecutive quarters | Q1 Cloud growth: 28% (single quarter, above threshold) | CLEAR | No action |
 
 ### Severity Definitions
 - **BREACH** — Kill Condition clearly and definitively met. Exit required after Nick's own confirmation read.

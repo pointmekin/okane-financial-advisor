@@ -14,7 +14,7 @@ The KB lives at `knowledge_base/` with four typed subdirectories, each grouped b
 | `transcripts/<TICKER>/` | Earnings call transcripts | `transcripts/GOOG/GOOG-2025-01-30-transcript.md` | `<TICKER>-<YYYY-MM-DD>-transcript.md` |
 | `filings/<TICKER>/` | 10-K, 10-Q, annual reports | `filings/GOOG/GOOG-2025-12-31-10K.md` | `<TICKER>-<YYYY-MM-DD>-<10K\|10Q>.md` |
 | `articles/<TICKER>/` | Analyst reports, news, research notes | `articles/GOOG/GOOG-2025-05-01-earnings-note.md` | `<TICKER>-<YYYY-MM-DD>-<tag>.md` |
-| `theses/<TICKER>/` | Nick's own thesis files (one per ticker) | `theses/GOOG/GOOG.md` | `<TICKER>.md` |
+| `theses/` | Nick's own thesis files (one per ticker) | `theses/GOOG.md` | `<TICKER>.md` |
 
 General (non-ticker) articles go in `articles/general/` with naming `general-<YYYY-MM-DD>-<tag>.md`.
 

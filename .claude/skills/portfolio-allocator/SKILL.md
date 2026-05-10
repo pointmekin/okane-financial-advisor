@@ -21,17 +21,25 @@ last_reviewed: <YYYY-MM-DD>
 
 # Nick's Portfolio
 
+> Managed by Nick via the `portfolio-allocator` skill.
+> Populated on first run of `/nick-init`.
+> Rules: 3-10 positions, max 40% cash, never 0 stocks.
+
+## Deviation Log
+
+> Track any deviations from portfolio rules here. If portfolio meets all invariants, note: "No deviations."
+
 ## Holdings
 
 | Ticker | Shares | Cost Basis ($/share) | Total Cost ($) | % Allocation | Thesis Link |
 |--------|--------|----------------------|----------------|--------------|-------------|
-| AAPL   | 10     | 175.00               | 1750.00        | 17.5%        | [[theses/AAPL]] |
+| GOOG   | 6      | 397.00               | 2382.00        | 23.8%        | [[theses/GOOG]] |
 
 ## Cash
 
 | Cash ($) | Cash (%) |
 |----------|----------|
-| 2500.00  | 25.0%    |
+| 738.00   | 7.4%     |
 
 ## Summary
 - **Total positions:** X

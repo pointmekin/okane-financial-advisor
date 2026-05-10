@@ -9,6 +9,13 @@ description: Manage WATCHLIST.md — add new tickers, update research status, pr
 
 `WATCHLIST.md` — at the project root.
 
+WATCHLIST.md uses this frontmatter:
+```yaml
+---
+last_reviewed: <YYYY-MM-DD>
+---
+```
+
 ## Status Lifecycle
 
 ```
