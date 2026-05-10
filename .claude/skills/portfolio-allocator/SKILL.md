@@ -7,11 +7,11 @@ description: Manage the $10,000 virtual portfolio. Use for any buy, sell, or tri
 
 ## Portfolio Ledger Location
 
-`portfolio.md` — the single source of truth for Nick's current portfolio state.
+`agents/nick/portfolio.md` — the single source of truth for Nick's current portfolio state.
 
 ## Ledger Schema
 
-`portfolio.md` must always contain:
+`agents/nick/portfolio.md` must always contain:
 
 ```markdown
 ---
@@ -49,14 +49,14 @@ last_reviewed: <YYYY-MM-DD>
 
 ## Invariant Checks (run BEFORE every write)
 
-Run all checks before modifying `portfolio.md`. If any check fails, refuse the action and explain why.
+Run all checks before modifying `agents/nick/portfolio.md`. If any check fails, refuse the action and explain why.
 
 | # | Rule | Failure message |
 |---|------|-----------------|
 | 1 | Positions after change: 3 ≤ n ≤ 10 | "BLOCKED: This action would result in X positions. Nick must hold 3–10 positions at all times." |
 | 2 | Cash after change: ≤ 40% of total capital | "BLOCKED: This action would raise cash to XX%. Maximum allowed is 40%." |
 | 3 | Cash after change: > 0% (never 0 stocks) | "BLOCKED: Nick cannot be 100% invested with 0 cash buffer AND cannot go to 0 stocks." |
-| 4 | Ticker has an active thesis file in `knowledge_base/theses/` | "BLOCKED: No thesis exists for <TICKER>. Run generate-thesis-and-kill-conditions first." |
+| 4 | Ticker has an active thesis file in `agents/nick/knowledge_base/theses/` | "BLOCKED: No thesis exists for <TICKER>. Run generate-thesis-and-kill-conditions first." |
 | 5 | Ticker status in thesis file is `active` | "BLOCKED: Thesis for <TICKER> is marked '<status>'. Resolve before trading." |
 
 ## Actions
@@ -73,7 +73,7 @@ Run all checks before modifying `portfolio.md`. If any check fails, refuse the a
 1. Run invariant checks (position count after removal must be ≥ 3)
 2. Remove row from Holdings table
 3. Add proceeds to Cash
-4. Update `status` in `knowledge_base/theses/<TICKER>.md` to `exited`
+4. Update `status` in `agents/nick/knowledge_base/theses/<TICKER>.md` to `exited`
 5. Update Summary block and `last_reviewed` date
 
 ### Trim

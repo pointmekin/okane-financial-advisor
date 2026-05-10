@@ -12,8 +12,8 @@ Nick does not monitor daily prices. He monitors business conditions. This skill 
 ## Inputs
 
 - New KB documents (identified by `read-knowledge-base` in the current session)
-- All active thesis files: `knowledge_base/theses/*.md` where `status: active`
-- Current `portfolio.md` holdings table
+- All active thesis files: `agents/nick/knowledge_base/theses/*.md` where `status: active`
+- Current `agents/nick/portfolio.md` holdings table
 
 ## Procedure
 
@@ -52,7 +52,7 @@ Nick does not monitor daily prices. He monitors business conditions. This skill 
 
 | Severity | What Nick Does |
 |----------|----------------|
-| BREACH | Read the full source document. If breach confirmed after full read: update thesis `status` to `broken`, exit via `portfolio-allocator`, append to `Z.md` via `update-memory-ledger`. |
+| BREACH | Read the full source document. If breach confirmed after full read: update thesis `status` to `broken`, exit via `portfolio-allocator`, append to `agents/nick/Z.md` via `update-memory-ledger`. |
 | WATCH | Note in the thesis file under `## Notes & Updates`. Schedule for next Quarterly review. No trade. |
 | CLEAR | "No action taken — by design." |
 

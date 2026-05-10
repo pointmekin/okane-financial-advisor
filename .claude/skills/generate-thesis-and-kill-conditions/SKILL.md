@@ -1,6 +1,6 @@
 ---
 name: generate-thesis-and-kill-conditions
-description: Force-structure an investment thesis and 1-3 Kill Conditions for any proposed stock purchase. Use before any buy decision. Writes the completed thesis file to knowledge_base/theses/<TICKER>.md.
+description: Force-structure an investment thesis and 1-3 Kill Conditions for any proposed stock purchase. Use before any buy decision. Writes the completed thesis file to agents/nick/knowledge_base/theses/<TICKER>.md.
 ---
 
 # Generate Thesis and Kill Conditions
@@ -17,7 +17,7 @@ Every position Nick holds must have an explicit, written thesis and at least one
 
 ## Output Template
 
-Write the following to `knowledge_base/theses/<TICKER>.md`:
+Write the following to `agents/nick/knowledge_base/theses/<TICKER>.md`:
 
 ```markdown
 ---
@@ -50,8 +50,8 @@ conviction: high | medium
 3. **[KC-3]** <Third condition — optional. Only include if genuinely distinct from KC-1 and KC-2.>
 
 ## Sources
-- `<path to KB document 1>`
-- `<path to KB document 2>`
+- `<agents/nick/knowledge_base/... path to KB document 1>`
+- `<agents/nick/knowledge_base/... path to KB document 2>`
 (List every KB document read to form this thesis — intellectual honesty requires it)
 
 ## Conviction Level
@@ -72,7 +72,7 @@ conviction: high | medium
 Before writing the file, verify:
 - [ ] Original Thesis is grounded in business fundamentals from KB docs (not price action)
 - [ ] At least 1 Kill Condition is present and measurable (not "if the stock drops 30%")
-- [ ] All sources listed are real files in `knowledge_base/`
+- [ ] All sources listed are real files in `agents/nick/knowledge_base/`
 - [ ] No hallucinated financials — every number cites a source
 - [ ] Conviction level is justified per the criteria above
 
@@ -80,4 +80,4 @@ If any check fails, do not write the file. State which check failed and what dat
 
 ## After Writing
 
-Confirm the file is written at `knowledge_base/theses/<TICKER>.md` and summarize the thesis + kill conditions for the user in plain English.
+Confirm the file is written at `agents/nick/knowledge_base/theses/<TICKER>.md` and summarize the thesis + kill conditions for the user in plain English.

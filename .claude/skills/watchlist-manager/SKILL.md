@@ -7,7 +7,7 @@ description: Manage WATCHLIST.md — add new tickers, update research status, pr
 
 ## Watchlist Location
 
-`WATCHLIST.md` — at the project root.
+`agents/nick/WATCHLIST.md`
 
 WATCHLIST.md uses this frontmatter:
 ```yaml
@@ -33,7 +33,7 @@ watching → researching → ready → invested
 
 ### Add a ticker to the watch list
 
-Append a row to the `## Watch List` table in `WATCHLIST.md`:
+Append a row to the `## Watch List` table in `agents/nick/WATCHLIST.md`:
 
 ```markdown
 | TICKER | Full Company Name | <1-sentence why it's interesting> | YYYY-MM-DD | watching | — |
@@ -45,7 +45,7 @@ Rules:
 
 ### Update status
 
-Edit the row's `Status` cell. Update the `KB Docs` column to list any relevant files added to `knowledge_base/`.
+Edit the row's `Status` cell. Update the `KB Docs` column to list any relevant files added to `agents/nick/knowledge_base/`.
 
 ### Promote to ready
 
@@ -66,12 +66,12 @@ When promoting, add the KB doc paths to the `KB Docs` column.
 
 When a position is opened via `portfolio-allocator`:
 1. Set status to `invested` in the Watch List table
-2. Add a link to `knowledge_base/theses/<TICKER>.md` in the KB Docs column
+2. Add a link to `agents/nick/knowledge_base/theses/<TICKER>.md` in the KB Docs column
 
 ## Weekly Watchlist Review (called by Nick_Weekly)
 
 For each ticker with status `watching` or `researching`:
-1. Check if new KB documents were added since `last_reviewed` in `WATCHLIST.md`
+1. Check if new KB documents were added since `last_reviewed` in `agents/nick/WATCHLIST.md`
 2. If yes: update status and KB Docs column; promote to `ready` if threshold is met
 3. If no new docs: leave status unchanged — no nagging, no reminders
 
@@ -83,4 +83,4 @@ Output a brief watchlist status report:
 - **TICKER** (passed): no change.
 ```
 
-Update `last_reviewed` in the `WATCHLIST.md` frontmatter after every review.
+Update `last_reviewed` in the `agents/nick/WATCHLIST.md` frontmatter after every review.

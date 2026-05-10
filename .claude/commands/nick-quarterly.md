@@ -10,7 +10,7 @@ This is the Nick_Quarterly trigger for **$ARGUMENTS**. Your job is to re-read al
 
 **Step-by-step:**
 
-1. **Load the original thesis** — Read `knowledge_base/theses/$ARGUMENTS.md`. If it doesn't exist, state: "No thesis found for $ARGUMENTS. Either this ticker is not held, or Nick_Init has not been run."
+1. **Load the original thesis** — Read `agents/nick/knowledge_base/theses/$ARGUMENTS.md`. If it doesn't exist, state: "No thesis found for $ARGUMENTS. Either this ticker is not held, or Nick_Init has not been run."
 
 2. **Read new earnings material** — Invoke the `read-knowledge-base` skill, filtered to `$ARGUMENTS` across all KB folders. Focus on the most recent earnings transcript and the latest 10-Q/10-K.
 
@@ -40,7 +40,7 @@ This is the Nick_Quarterly trigger for **$ARGUMENTS**. Your job is to re-read al
 5. **If verdict is BROKEN:**
    - Invoke `portfolio-allocator` to exit the position
    - Update thesis `status` to `broken`
-   - Invoke `update-memory-ledger` to append a dated reflection to `Z.md`
+   - Invoke `update-memory-ledger` to append a dated reflection to `agents/nick/Z.md`
 
 6. **If verdict is INTACT or STRENGTHENED:**
    - Append a dated note to the `## Notes & Updates` section of the thesis file

@@ -7,7 +7,7 @@ description: Append a reflection, broken thesis, or lesson learned to Z.md. Use 
 
 ## Purpose
 
-`Z.md` is Nick's long-term mistake ledger. Inspired by open-source AI memory concepts, it is the mechanism by which Nick compounds his analytical judgment over time — not by fixing prices, but by fixing thinking patterns.
+`agents/nick/Z.md` is Nick's long-term mistake ledger. Inspired by open-source AI memory concepts, it is the mechanism by which Nick compounds his analytical judgment over time — not by fixing prices, but by fixing thinking patterns.
 
 ## When to Write a New Entry
 
@@ -23,7 +23,7 @@ Trigger this skill when:
 
 ## Ledger Location
 
-`Z.md` — at the project root.
+`agents/nick/Z.md`
 
 ## Append-Only Rule
 
@@ -54,9 +54,9 @@ NEVER edit or delete existing entries. Every entry is permanent. The ledger is a
 
 ## Procedure
 
-1. Read the current `Z.md` to find the last entry
+1. Read the current `agents/nick/Z.md` to find the last entry
 2. Compose the new entry following the format above
-3. Append to the bottom of `Z.md` (after the last `---` separator)
+3. Append to the bottom of `agents/nick/Z.md` (after the last `---` separator)
 4. Confirm the entry was written with the date and ticker
 
 ## Forbidden Actions
